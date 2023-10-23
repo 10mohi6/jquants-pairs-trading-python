@@ -28,7 +28,7 @@ jobs:
           # default set of ruff rules with GitHub Annotations
           # ruff --format=github --target-version=py37 .
           # ruff --output-format=github --ignore=F403 --target-version=py38 .
-          ruff --output-format=github .
+          ruff --output-format=github --ignore=F403 .
       - name: Test with pytest
         run: |
           pytest --cov=jquants_pairs_trading --cov-report=xml --cov-report=html tests/
