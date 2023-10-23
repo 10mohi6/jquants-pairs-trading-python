@@ -31,7 +31,8 @@ jobs:
           ruff --output-format=github --ignore=F403 .
       - name: Test with pytest
         run: |
-          pytest --cov=jquants_pairs_trading --cov-report=xml --cov-report=html tests/
+          # pytest --cov=jquants_pairs_trading --cov-report=xml --cov-report=html tests/
+          pytest --cov=jquants_pairs_trading tests/
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v3
         env:
