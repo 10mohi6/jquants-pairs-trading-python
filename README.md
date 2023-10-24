@@ -22,7 +22,7 @@ jquants-pairs-trading is a python library for backtest with japanese stock pairs
 from jquants_pairs_trading import JquantsPairsTrading
 import pprint
 
-jpt = MyJpt(
+jpt = JquantsPairsTrading(
     mail_address="<your J-Quants mail address>",
     password="<your J-Quants password>",
 )
@@ -41,7 +41,7 @@ pprint.pprint(jpt.find_pairs([3382, 4063, 4502]))
 from jquants_pairs_trading import JquantsPairsTrading
 import pprint
 
-jpt = MyJpt(
+jpt = JquantsPairsTrading(
     mail_address="<your J-Quants mail address>",
     password="<your J-Quants password>",
 )
@@ -68,7 +68,7 @@ pprint.pprint(jpt.backtest((3382, 4502)))
 from jquants_pairs_trading import JquantsPairsTrading
 import pprint
 
-jpt = MyJpt(
+jpt = JquantsPairsTrading(
     mail_address="<your J-Quants mail address>",
     password="<your J-Quants password>",
 )
@@ -95,7 +95,7 @@ pprint.pprint(jpt.latest_signal((6954, 6981)))
 from jquants_pairs_trading import JquantsPairsTrading
 import pprint
 
-jpt = MyJpt(
+jpt = JquantsPairsTrading(
     mail_address="<your J-Quants mail address>",
     password="<your J-Quants password>",
     window=1,
