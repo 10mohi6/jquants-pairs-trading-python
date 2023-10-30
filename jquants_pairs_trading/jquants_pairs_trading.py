@@ -71,6 +71,7 @@ class JquantsPairsTrading:
                     }
                 )
                 .set_index("Date")
+                .fillna(method="bfill")
             )
             df.to_csv(csv)
         return df

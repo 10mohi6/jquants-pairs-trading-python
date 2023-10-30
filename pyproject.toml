@@ -1,6 +1,6 @@
 [project]
 name = "jquants-pairs-trading"
-version = "0.1.1"
+version = "0.1.2"
 description = "jquants-pairs-trading is a python library for backtest with japanese stock pairs trading using kalman filter, J-Quants on Python 3.8 and above."
 readme = "README.md"
 requires-python = ">=3.8"
